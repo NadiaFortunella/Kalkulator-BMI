@@ -1,3 +1,4 @@
+
 // Fungsi untuk menghitung BMI
 function calculateBMI() {
   // Ambil nilai dari input
@@ -5,6 +6,7 @@ function calculateBMI() {
   const height = parseFloat(document.getElementById('height').value)/100;
   const kategoriBMI = document.getElementById('kategoriBMI');
   const solusi = document.getElementById('solusi')
+  let body = document.body
 
 
   // Validasi input
@@ -35,10 +37,13 @@ function calculateBMI() {
     solusi.innerHTML = "Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik. Perlu konsultasi dengan ahli gizi untuk mengetahui resiko dari obesitas."
   }
   document.getElementById("kategoriBMI").innerHTML = "Kategori: " + kategori;
+
+  // Penginputan
+  body.append('bmi')
+  body.append('kategori')
+  body.append('solusi')
 }
 
-body.append(bmi)
-body.append(kategori)
 
 // Fungsi untuk mereset form
 function resetForm() {
