@@ -1,8 +1,8 @@
 // Fungsi untuk menghitung BMI
 function calculateBMI() {
   // Ambil nilai dari input
-  const weight = parseFloat(document.getElementById("weight").value);
-  const height = parseFloat(document.getElementById("height").value)/100;
+  const weight = parseFloat(document.getElementById('weight').value);
+  const height = parseFloat(document.getElementById('height').value)/100;
   const kategoriBMI = document.getElementById('kategoriBMI');
   const solusi = document.getElementById('solusi')
 
@@ -36,6 +36,9 @@ function calculateBMI() {
   }
   document.getElementById("kategoriBMI").innerHTML = "Kategori: " + kategori;
 }
+
+body.append(bmi)
+body.append(kategori)
 
 // Fungsi untuk mereset form
 function resetForm() {
